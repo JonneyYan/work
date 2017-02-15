@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QQ手游嘉年华</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./style.css" media="screen" charset="utf-8">
+
+</head>
+<body>
+    <div class="container">
+        <img class="bg-imgs" src="" alt="" />
+        <a class="btn" href="#">进入</a>
+        <a class="bubble bubble-left animated infinite pulse" href="#">看看更多的鹅</a>
+        <span class="finger animated infinite tada">手指</span>
+        <div class="touch">
+            <span class="touch-l">l</span>
+            <span class="touch-r">r</span>
+            <span class="touch-m">
+                <span class="touch-center animated infinite touch-flash"></span>
+            </span>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var page = +getSearchObj(window.location.search).page || 0;
+    page = page < 11 ? page : 1;
+    var bg = document.querySelector('.bg-imgs');
+    bg.src = './images/b' + page + '.jpg';
+
+    if (page === 0) {
+        document.querySelector('.bubble').style.display = 'none';
+        document.querySelector('.finger').style.display = 'none';
+
+        var timer;
+        document.querySelector('.touch').addEventListener('touchstart', function() {
+            this.classList.add('touching');
+            timer = setTimeout(function() {
+                window.location.href = '?page=1'; // TODO: 请在此处替换跳转连写
+            }, 1000);
+        });
+        document.querySelector('.touch').addEventListener('touchend', function() {
+            this.classList.remove('touching');
+            clearTimeout(timer);
+        });
+    }else {
+        document.querySelector('.touch').style.display = 'none';
+    }
+    if ([3, 4, 5, 8].indexOf(page) !== -1) {
+        var bubble = document.querySelector('.bubble');
+        bubble.classList.remove('bubble-left');
+        bubble.classList.add('bubble-right');
+    }
+    document.body.addEventListener('touchmove', function(event) {
+event.preventDefault();
+}, false);
+
+    function getSearchObj(search) {
+        var qs = search.length > 0 ? search.substr(1) : '';
+        var args = {};
+        var items = qs.length > 0 ? qs.split('&') : [];
+        var item = null;
+        var name = null;
+        var value = null;
+        var len = items.length;
+
+        for (var i = 0; i < len; i += 1) {
+            item = items[i].split('=');
+            name = decodeURIComponent(item[0]);
+            value = decodeURIComponent(item[1]);
+
+            if (name.length) {
+                args[name] = value;
+            }
+        }
+
+        return args;
+    }
+    </script>
+</body>
+</html>

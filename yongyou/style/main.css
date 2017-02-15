@@ -1,0 +1,513 @@
+.header-container {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.header .title {
+    font-size: 14px;
+    color: #999999;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.userinfo {
+    margin-top: -7px;
+}
+
+.userinfo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+}
+
+.userinfo p {
+    color: #666666;
+    margin: 0px;
+    min-width: 200px;
+}
+
+.main {
+    width: 1140px;
+    margin: 20px auto;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    min-height: 500px;
+}
+
+.side {
+    width: 200px;
+    float: left;
+    /*position: relative;*/
+}
+
+.side:before {
+    content: "";
+    display: block;
+    width: 10px;
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 190px;
+    background-color: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    border-width: inherit;
+}
+
+.side h1 {
+    font-size: 16px;
+    color: #333333;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.side ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.side ul li {
+    padding: 10px 0;
+    padding-left: 40px;
+    margin: 10px 0;
+}
+
+.side ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.side ul li.active,
+.side ul li:hover {
+    background: rgba(153, 215, 74, 0.15);
+    color: #99D74A;
+    border-right: 4px solid #99D74A;
+}
+
+.btn-normal.active .icon-tips,
+.btn-normal:hover .icon-tips {
+    background-image: url(../images/icons/5_0.png);
+}
+
+.btn-normal.active .icon-issuse,
+.btn-normal:hover .icon-issuse {
+    background-image: url(../images/icons/6_0.png);
+}
+
+.btn-normal.active .icon-book,
+.btn-normal:hover .icon-book {
+    background-image: url(../images/icons/8_0.png);
+}
+
+.side ul li.active .icon-bj,
+.side ul li:hover .icon-bj {
+    width: 18px;
+    background-image: url(../images/icons/19_0.png);
+}
+
+.side ul li.active .icon-rw,
+.side ul li:hover .icon-rw {
+    background-image: url(../images/icons/10_0.png);
+}
+
+.side ul li.active .icon-xc,
+.side ul li:hover .icon-xc {
+    background-image: url(../images/icons/2_0.png);
+}
+
+.side ul li.active .icon-cl,
+.side ul li:hover .icon-cl {
+    background-image: url(../images/icons/17_0.png);
+}
+
+.side ul li.active .icon-cp,
+.side ul li:hover .icon-cp {
+    background-image: url(../images/icons/18_0.png);
+}
+
+.content-container {
+    padding-left: 200px;
+}
+
+.content-container .title {
+    font-size: 14px;
+    color: #999999;
+    padding: 22px 30px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.btn-concept {
+    padding: 9px 18px;
+    background-color: #99D74A;
+    color: white;
+}
+
+.concept {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    top: 0;
+    left: -500px;
+    min-width: 300px;
+    max-width: 500px;
+    z-index: 10000;
+    overflow: auto;
+}
+.concept > ul {
+    margin: 20px 0px;
+}
+.concept h1 {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding-right: 15px;
+}
+
+.concept h1 span {
+    float: right;
+    font-family: sans-serif;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -3px;
+}
+
+.concept ul li.have-child>.title {
+    font-size: 16px;
+    color: #333333;
+    border-left: 5px solid #99D74A;
+    font-weight: bold;
+    text-indent: 1.5em;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.concept ul li>.title {
+    font-size: 14px;
+    padding: 9px 0;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.concept ul li>.title span {
+    float: right;
+    margin-left: 20px;
+    color: #FF8604;
+}
+
+.concept ul li.have-child>.title:after {
+    content: "▼";
+    float: right;
+    color: gray;
+    margin-right: 18px;
+}
+
+.concept ul li.have-child>.title.unfold:after {
+    content: "▶";
+    float: right;
+    color: gray;
+}
+
+.concept ul li {
+    text-indent: 2em;
+}
+
+.concept ul li .title:hover {
+    background: #F9F9F9;
+}
+
+.content-container {
+    display: none;
+}
+
+.content-container .content {
+    padding: 20px;
+}
+
+.content-container .content hr {
+    border-top: 1px solid #E4E4E4;
+    width: 940px;
+    margin: 20px -20px;
+}
+
+.list-content {
+    margin-left: 35px;
+    overflow: hidden;
+}
+
+.list-title {
+    margin: 30px 0;
+}
+
+.list-num {
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #f4f6f8;
+}
+
+.input-radio .lbl {
+    padding: 7px 37px;
+    background: #F9F9F9;
+    border: 1px solid #E4E4E4;
+    color: #666666;
+    margin: 0 16px 0 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.input-radio {
+    display: inline-block;
+}
+
+.input-radio input {
+    display: none;
+}
+
+.input-radio input:checked+.lbl {
+    background: #FF8604;
+    color: white;
+}
+
+textarea {
+    background: #F9F9F9;
+    border: 1px solid #E4E4E4;
+    word-wrap: break-word;
+    resize: vertical;
+    height: 130px;
+    padding: 10px;
+}
+
+.btn-finish {
+    margin: 50px auto;
+    display: block;
+}
+
+.btn-download {
+    margin: 50px auto;
+    display: block;
+}
+
+.slide-container {
+    position: relative;
+}
+
+.btn-prev,
+.btn-next {
+    width: 13px;
+    height: 23px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.btn-prev {
+    left: 0;
+    cursor: pointer;
+}
+
+.btn-next {
+    right: 0;
+    cursor: pointer;
+}
+
+.slide-container {
+    width: 450px;
+    margin: auto;
+}
+
+.slides li {
+    width: 350px;
+    height: 196px;
+    margin: auto;
+    display: none;
+    overflow: hidden;
+}
+
+.slides li.active {
+    display: block;
+}
+
+.slides li img {
+    width: 100%;
+}
+
+.slide-content {
+    display: none;
+}
+
+.slide-content.active {
+    display: block;
+}
+
+.work-detail {
+    text-align: center;
+}
+
+.work-item {
+    border: 1px solid #E4E4E4;
+    padding: 36px 10px;
+    height: 220px;
+    min-width: 180px;
+    text-align: center;
+    margin-right: 70px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.work-item img {
+    height: 70px;
+}
+
+.work-item p {
+    margin-top: 10px;
+}
+
+.work-detail {
+    overflow: hidden;
+}
+
+.work-end {
+    height: 120px;
+    width: 120px;
+    background: #F9F9F9;
+    border: 1px solid #E4E4E4;
+    position: relative;
+    padding: 10px;
+    float: left;
+    margin: 20px;
+}
+
+.work-end p {
+    height: 46px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.work-end img {
+    width: 48px;
+    margin: 10px;
+}
+
+.work-add {
+    cursor: pointer;
+}
+
+.work-end h1 {
+    font-size: 24px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.work-end:hover .actions {
+    display: block;
+}
+
+.work-end .actions {
+    position: absolute;
+    display: none;
+    line-height: 120px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.50);
+    color: white;
+    font-size: 12px;
+}
+
+.work-end .actions span {
+    cursor: pointer;
+}
+
+.yqm {
+    display: inline;
+    font-size: 14px;
+    color: #999999;
+}
+
+.yqm input {
+    height: 40px;
+    text-align: center;
+}
+
+.cp-text {
+    margin: 20px;
+}
+
+.cp-text p {
+    text-align: center;
+    margin: 0;
+}
+
+.cp-course {
+    width: 265px;
+    border: 1px solid #E4E4E4;
+    margin: auto;
+    text-align: center;
+}
+
+.cp-course img {
+    width: 60px;
+    margin-top: 30px;
+}
+
+.cp-course p {
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}
+
+.cp-course .start {
+    background: #99D74A;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.add-cp-course {
+    text-align: center;
+}
+
+.add-cp-bottom a {
+    color: #99D74A;
+}
+
+.add-cp-course .start {
+    background: #99D74A;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 266px;
+}

@@ -1,0 +1,431 @@
+html,
+body
+{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background: white;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+a,
+button,
+input
+{
+    text-decoration: none;
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 1.去除android a/button/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
+}
+a
+{
+    display: block;
+    /*background: rgba(255, 0, 0, 0.5);*/
+}
+.modal-layer
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, .64);
+}
+.modal
+{
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+.modal .close
+{
+    position: absolute;
+    top: 0;
+    right: -50px;
+
+    display: inline-block;
+
+    width: 35px;
+    height: 35px;
+
+    background-image: url(./images/close.png);
+    background-size: cover;
+}
+.games
+{
+    padding: 20px;
+
+    border: 2px solid #d00000;
+    border-radius: 10px;
+    background-color: white;
+}
+.games hr
+{
+    border-top: 2px dotted #d00000;
+}
+.game
+{
+    display: inline-block;
+
+    width: 130px;
+    height: 43px;
+
+    background-image: url(./images/pop1.jpg);
+    background-size: cover;
+}
+.games-2 .game
+{
+    background-image: url(./images/pop4.jpg);
+}
+.games-3 .game
+{
+    background-image: url(./images/pop2.jpg);
+}
+.games-4 .game
+{
+    background-image: url(./images/pop3.jpg);
+}
+.game-2
+{
+    background-position: 0 45px;
+}
+.game-3
+{
+    background-position: 0 107px;
+}
+.overlayer
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, .64);
+    background-image: url('./images/opt.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+}
+.overlayer span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: inline-block;
+
+    width: 45px;
+    height: 59px;
+    margin-top: -50px;
+    margin-left: -20px;
+
+    background-image: url('./images/finger.png');
+    background-size: cover;
+}
+.slide ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.slide li
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    list-style: none;
+}
+.page
+{
+    width: 100%;
+    height: 100vh;
+}
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    bottom: -67px;
+    left: 0;
+
+    width: 100%;
+
+    user-select: none;
+}
+
+.bg img
+{
+    display: inline-block;
+
+    width: 100%;
+    height: 0;
+    margin-top: 70px;
+    padding-top: 100%;
+
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-size: 100% auto ;
+}
+.footer span
+{
+    position: absolute;
+    bottom: 67px;
+
+    display: inline-block;
+
+    width: 67px;
+    height: 63px;
+
+    background-size: cover;
+}
+.chuji
+{
+    left: 0;
+
+    background-image: url(./images/c.png);
+}
+.chuji-2
+{
+    background-position-y: -74px;
+}
+.chuji-3
+{
+    background-position-y: -140px;
+}
+.chuji-4
+{
+    background-position-y: -233px;
+}
+.chuji-5
+{
+    background-position-y: -309px;
+}
+.chuji-6
+{
+    background-position-y: -377px;
+}
+.chuji-7
+{
+    background-position-y: -454px;
+}
+.qq
+{
+    right: 0;
+
+    background-image: url(./images/qq.png);
+}
+
+.box
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+
+    width: 90%;
+    height: 0;
+    padding-bottom: 50%;
+
+    transform: translate(-50%, 0);
+    text-align: center;
+
+    border: 2px solid #d00000;
+    background-color: white;
+}
+.box h1
+{
+    position: absolute;
+    top: -49%;
+    left: 50%;
+
+    width: 111%;
+    height: 0;
+    margin: 0;
+    padding-bottom: 29%;
+
+    transform: translate(-50%, 0);
+
+    background-image: url(./images/c1.png);
+    background-size: cover;
+}
+.box-1 h1
+{
+    background-image: url(./images/c2.png);
+}
+.box h1 img
+{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+
+    display: inline-block;
+
+    width: 67%;
+    height: 0;
+    padding-bottom: 15.3%;
+
+    transform: translate(-50%, 0);
+
+    background-size: cover;
+}
+.wenan
+{
+    display: inline-block;
+
+    width: 300px;
+    height: 0;
+    margin: 20px 10px 0 10px;
+    padding-bottom: 80px;
+
+    background-size: cover;
+}
+.actions a
+{
+    display: inline-block;
+
+    width: 100px;
+    height: 45px;
+
+    text-indent: -10000em;
+
+    background-image: url(./images/btn.png);
+    background-repeat: no-repeat;
+    background-size: 320px 45px;
+}
+
+.actions a:active
+{
+    /*background-position: 7px 5px;*/
+}
+.actions .download
+{
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+
+    background-position-x: -110px;
+}
+.actions .fuli
+{
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+
+    background-position-x: -222px;
+}
+@media only screen and (max-width: 350px)
+{
+    .actions a
+    {
+        display: inline-block;
+
+        width: 70px;
+        height: 35px;
+
+        text-indent: -10000em;
+
+        background-image: url(./images/btn.png);
+        background-repeat: no-repeat;
+        background-size: 227px 34px;
+    }
+    .actions .download
+    {
+        background-position-x: -79px;
+    }
+    .actions .fuli
+    {
+        background-position-x: -157px;
+    }
+    .wenan
+    {
+        display: inline-block;
+
+        width: 250px;
+        height: 0;
+        margin: 10px;
+        padding-bottom: 65px;
+
+        background-size: cover;
+    }
+}
+
+
+/*base code*/
+.animated
+{
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.animated.infinite
+{
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+.animated.hinge
+{
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes slideInUp
+{
+    0%
+    {
+        -webkit-transform: translate3d(0, 10%, 0);
+                transform: translate3d(0, 10%, 0);
+    }
+    100%
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes slideInUp
+{
+    0%
+    {
+        -webkit-transform: translate3d(0, 10%, 0);
+            -ms-transform: translate3d(0, 10%, 0);
+                transform: translate3d(0, 10%, 0);
+    }
+    100%
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+}
+.slideInUp
+{
+    -webkit-animation-name: slideInUp;
+            animation-name: slideInUp;
+}

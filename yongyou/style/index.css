@@ -1,0 +1,251 @@
+.header-container {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+    
+    padding: 24px;
+}
+
+.header {
+    width: 1140px;
+    margin: auto;
+}
+
+.header .title {
+    font-size: 14px;
+    color: #999999;
+}
+
+.logo {
+    height: 38px;
+    float: left;
+}
+
+.nav {
+    list-style: none;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.nav li {
+    float: left;
+    margin: 0 25px;
+}
+
+.nav a {
+    color: #333;
+    font-size: 16px;
+}
+
+a.active,
+a:hover {
+    color: #99D74A;
+}
+
+.login,
+.userinfo {
+    float: right;
+    font-size: 14px;
+    color: #999999;
+    line-height: 40px;
+}
+
+.userinfo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+}
+
+.main {
+    overflow: hidden;
+    background-color: white;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.container .title {
+    font-size: 24px;
+    color: #666666;
+    border-bottom: 1px solid #999999;
+    text-align: center;
+    margin: 40px 0;
+    line-height: 0px;
+}
+
+.container .title span {
+    background: white;
+    padding: 0 10px;
+}
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    height: 420px;
+}
+
+.zylj {
+    margin-bottom: 50px;
+}
+
+.zylj-item {
+    width: 145px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    margin: 10px 68px;
+}
+
+.zylj-item img {
+    width: 100%;
+}
+
+.footer {
+    font-size: 12px;
+    color: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    background: #515151;
+    text-align: center;
+}
+
+.course-tab {
+    overflow: hidden;
+}
+
+.tabs {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.tabs li {
+    padding: 5px 18px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.tabs li.active,
+.tabs li:hover {
+    background: #99D74A;
+    border-radius: 2px;
+    color: white;
+}
+.yqm {
+
+    float: right;
+}
+.input-container {
+    margin: 20px 0;
+}
+
+.list-content {
+    position: relative;
+    display: none;
+}
+
+.input-container input {
+    padding-right: 50px;
+    outline: none;
+}
+
+.input-container .icon-search {
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.more {
+    margin: 60px 0;
+    overflow: hidden;
+}
+
+.more a {
+    font-size: 14px;
+    color: #999999;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+    padding: 6px 16px;
+    display: inline-block;
+    float: right;
+}
+
+.modal-sm {
+    min-width: 380px;
+}
+
+.modal .start {
+    background: #99D74A;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 281px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#register .start {
+    width: 320px;
+}
+
+.modal-sm .input-attach {
+    margin: 20px;
+    color: #999999;
+}
+
+.modal-sm a {
+    color: #99D74A;
+}
+
+#vcode {
+    width: 177px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+#get-code {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 32px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.40);
+    font-weight: normal;
+    padding: 20px 50px;
+    margin-top: 130px;
+    display: inline-block;
+}
+
+.banner-text span {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.ljsx {
+    background: #99D74A;
+    border-radius: 100px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px 66px;
+    cursor: pointer;
+}

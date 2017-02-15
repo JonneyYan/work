@@ -1,0 +1,194 @@
+.main {
+    width: 1140px;
+    margin: 20px auto;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    min-height: 500px;
+}
+
+.main h1 {
+    padding: 25px 50px;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #E4E4E4;
+    margin: 0;
+}
+
+.input-radio .lbl {
+    padding: 7px 0;
+    background: #F9F9F9;
+    border: 1px solid #E4E4E4;
+    color: #666666;
+    margin: 0 16px 0 0;
+    width: 110px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.input-radio {
+    display: inline-block;
+}
+
+.input-radio input {
+    display: none;
+}
+
+.input-radio input:checked+.lbl {
+    background: #FF8604;
+    color: white;
+}
+
+.content {
+    margin: 40px 50px;
+}
+
+.row {
+    margin: 30px 0;
+}
+
+.label {
+    font-size: 16px;
+    color: #333333;
+    float: left;
+    width: 100px;
+    line-height: 35px;
+}
+
+.teacher {
+    display: none;
+}
+
+.btn-finish {
+    padding: 9px 18px;
+    margin-left: 535px;
+    font-family: inherit;
+}
+
+.main h1 span {
+    font-size: 14px;
+    color: #999999;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.create-class input,
+.create-class select {
+    padding: 10px;
+    width: 410px;
+}
+
+.row-text {
+    font-size: 16px;
+    color: #333333;
+    line-height: 35px;
+}
+
+.shuoming {
+    position: absolute;
+    top: 110px;
+    left: 650px;
+    border-left: 1px solid #E4e4e4;
+}
+
+.shuoming h1 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    border: none;
+    background-image: url(../images/icons/tips.png);
+    padding: 20px 0 0 0;
+    padding-left: 70px;
+    background-position: 10px 2px;
+}
+
+.shuoming ol {
+    font-size: 14px;
+    color: #666666;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.shuoming ol li {
+    margin: 10px 0;
+}
+
+.btn-cancel {
+    padding: 9px 18px;
+    margin-left: 363px;
+}
+
+.btn-create {
+    padding: 9px 18px;
+    margin-left: 10px;
+}
+
+.yaoqinma-modal {
+    text-align: center;
+}
+
+.yaoqinma-modal h1 {
+    font-size: 20px;
+    color: #333333;
+    font-weight: normal;
+}
+.yaoqinma-modal h2 {
+font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+}
+.yaoqinma-modal h3 {
+    font-size: 20px;
+    color: #666666;
+    letter-spacing: 0;
+    font-weight: normal;
+    letter-spacing: 10px;
+    background: #F9F9F9;
+    margin: auto;
+    width: 180px;
+    padding: 5px 35px;
+}
+
+.yaoqinma-modal p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.cp-course {
+    width: 225px;
+    border: 1px solid #E4E4E4;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cp-text {
+    text-align: center;
+    margin: 0;
+}
+
+.cp-course img {
+    width: 60px;
+    margin-top: 30px;
+}
+
+.cp-course .start {
+    background: #99D74A;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.stud-body, .teacher-body {
+    text-align: center;
+    font-size: 16px;
+}
+
+.teacher-body .cp-course {
+    width: 150px;
+    padding: 10px 0;
+}

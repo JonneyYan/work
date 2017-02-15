@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html data-use-rem>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>红包</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script type="text/javascript" src="../js/grid.js"></script>
+  </head>
+  <body ontouchstart="">
+    <div class="p-index">
+      <div class="wrap">
+        <div class="banner"><img src="http://placeholder.qiniudn.com/750x300"></div>
+        <div class="process">
+          <div data-percent="100" class="circle-index">
+            <div data-animation="88899" class="circle-index-data"><span class="data">88899</span><span class="unit">步</span></div>
+            <div class="txt">目标 10000步</div>
+            <div class="circle-score100">
+              <div class="label"> </div>
+            </div>
+            <div class="circle-cover-bug"> 
+              <div class="circle-radius-start"></div>
+              <div class="circle-radius-end"></div>
+              <div class="circle-270-hover"></div>
+            </div>
+            <div class="circle-base">
+              <div class="circle-radius-start"></div>
+              <div class="circle-center-cover"></div>
+              <div class="circle-right-cover">
+                <div class="circle-right-arc">
+                  <div class="circle-radius"></div>
+                </div>
+              </div>
+              <div class="circle-left-cover">
+                <div class="circle-left-arc">
+                  <div class="circle-radius"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hongbao"></div>
+        <div class="hongbao-pop none">
+          <div class="bg">
+            <div class="title">来自keep</div>
+            <div class="desc">奖励一个红包给您！</div>
+            <div class="money"><span class="count">8.20</span><span class="unit">元 </span></div>
+            <div class="status">已存入余额</div>
+            <div class="link">查看领取详情></div>
+            <div class="close"></div>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <div class="btn btn-blue btn-text-white">领取红包</div>
+          <div class="btn btn-blue btn-disable">领取红包</div>
+        </div>
+        <div class="linker">查看领取记录</div>
+        <div class="desc"> 
+          <div class="title">运动福利玩法</div>
+          <div class="sub">• 红包领取规则</div>
+          <ul>
+            <li>每日高达XXXW红包额度，随机赠送；</li>
+            <li>新手用户满500步即可获取随机红包；</li>
+            <li>老用户每日走满4000步即可参与抢红包，老用户每日走满4000步即可参与抢红包；</li>
+            <li>分享活动可额外获得一次抢红包机会；</li>
+          </ul>
+          <div class="sub">• 怎样领取红包？</div>
+          <ul>
+            <li>每日高达XXXW红包额度，随机赠送；</li>
+            <li>新手用户满500步即可获取随机红包；</li>
+            <li>老用户每日走满4000步即可参与抢红包，老用户每日走满4000步即可参与抢红包；</li>
+            <li>分享活动可额外获得一次抢红包机会；</li>
+          </ul>
+          <div class="sub">• 红包如何提现？</div>
+          <ul>
+            <li>每日高达XXXW红包额度，随机赠送；</li>
+            <li>新手用户满500步即可获取随机红包；</li>
+            <li>老用户每日走满4000步即可参与抢红包，老用户每日走满4000步即可参与抢红包；</li>
+            <li>分享活动可额外获得一次抢红包机会；</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".btn-text-white").on("click",function(){
+          $(".hongbao-pop").removeClass("none").addClass("show")
+        });
+        $(".hongbao-pop .close").on("click",function(){
+          $(".hongbao-pop").addClass("none").removeClass("show")
+        });
+      
+        var circleSingleColor = function(){
+          $("[data-percent]").each(function(){
+            var $root = $(this),
+              $rightArc = $root.find(".circle-right-arc"),
+              $leftArc = $root.find(".circle-left-arc"),
+              healthValue =  $(this).attr("data-percent"),
+              deg = 0;
+            if (healthValue < 66) {
+              deg = healthValue * 270 / 100;
+              $leftArc.find(".circle-radius").hide();
+      
+              $rightArc.animate({
+                  rotate: deg + "deg"
+              }, 700);
+      
+              // $rightArc.css("-webkit-transform","rotate( "+deg + "deg)");
+            } else {
+              deg = (healthValue - 66) * 270 / 100;
+              // $rightArc.css("-webkit-transform","rotate( 180deg )");
+              // $leftArc.css("-webkit-transform","rotate( "+deg + "deg)");
+              $leftArc.find(".circle-radius").hide();
+              $rightArc.animate({
+                rotate: "180deg"
+              }, 400, function() {
+                deg = (healthValue - 66) * 270 / 100;
+                $leftArc.find(".circle-radius").show();
+                $leftArc.animate({
+                  rotate: deg + "deg"
+                }, 300,function(){
+                  if(healthValue>=99){  
+                    $(".circle-radius-end").css("background","#18b4Ed");
+                  }
+                });
+              });
+      
+            }
+          });
+        };
+        circleSingleColor();
+      });
+    </script>
+  </body>
+</html>

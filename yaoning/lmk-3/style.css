@@ -1,0 +1,536 @@
+html,
+body
+{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    background: black;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+a,
+button,
+input
+{
+    text-decoration: none;
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 1.去除android a/button/input标签被点击时产生的边框 2.去除ios a标签被点击时产生的半透明灰色背景 */
+}
+a
+{
+    display: block;
+    /*background: rgba(255, 0, 0, 0.5);*/
+}
+.header
+{
+    position: fixed;
+    z-index: 10000000;
+    top: 0;
+    left: 0;
+}
+.header img
+{
+    display: block;
+
+    width: 100%;
+}
+.btn-sqkk
+{
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 165px;
+    height: 60px;
+
+    text-indent: -1000em;
+}
+.stage-1
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.bg-imgs img
+{
+    display: block;
+
+    width: 100%;
+}
+.btn
+{
+    position: absolute;
+    /*background: rgba(72, 0, 255, 0.47);*/
+
+    text-indent: -1000em;
+}
+.btn-1
+{
+    top: 10px;
+    right: 10px;
+}
+.btn-2
+{
+    top: 740px;
+    left: 50%;
+
+    width: 400px;
+    height: 84px;
+
+    transform: translateX(-50%);
+
+    background: url(./images/btn-01.png) no-repeat;
+}
+.btn-3
+{
+    top: 1360px;
+    left: 50%;
+
+    width: 400px;
+    height: 84px;
+
+    transform: translateX(-50%);
+
+    background: url(./images/btn-02.png) no-repeat;
+}
+.btn-4
+{
+    top: 1834px;
+    left: 50%;
+
+    width: 180px;
+    height: 180px;
+
+    transform: translateX(-50%);
+
+    background: url(./images/btn-choujiang.png) no-repeat;
+    background-size: 100% 100%;
+}
+.btn-game
+{
+    bottom: 37px;
+    left: 50%;
+
+    width: 300px;
+    height: 70px;
+
+    transform: translateX(-50%);
+
+    background: url(./images/btn-lingqu.png) no-repeat;
+    background-size: 100% 100%;
+}
+.btn-dh
+{
+    position: relative;
+
+    width: 250px;
+    height: 70px;
+    margin: 20px 132px;
+
+    background: url(./images/btn-duihuan.png) no-repeat;
+    background-size: 100% 100%;
+}
+.btn-xiazai
+{
+    display: inline-block;
+
+    width: 320px;
+    height: 70px;
+
+    text-indent: -10000em;
+
+    background: url(./images/btn-xiazai.png) no-repeat;
+    background-size: 100% 100%;
+}
+.btn-tq
+{
+    width: 250px;
+    height: 70px;
+    margin: 12px 8px;
+
+    background: url(./images/btn-duihuan.png) no-repeat;
+    background-size: 100% 100%;
+}
+.btn-gz
+{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+
+    width: 430px;
+    height: 110px;
+}
+.btn-10
+{
+    top: 4435px;
+    left: 190px;
+}
+.btn-11
+{
+    top: 5047px;
+    left: 301px;
+}
+.btn-12
+{
+    top: 5496px;
+    left: 51px;
+}
+.btn-13
+{
+    top: 5497px;
+    left: 331px;
+}
+.overlayer,
+.overlayer-2
+{
+    position: fixed;
+    top: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    background: rgba(0, 0, 0, .64);;
+}
+.modal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: 10 auto;
+    padding: 30px;
+
+    transform: translate(-50%, -50%);
+}
+.modal-content
+{
+    width: 550px;
+    padding: 20px;
+
+    text-align: center;
+
+    border: 1px solid #5e5543;
+    background-color: #1c1412;
+}
+.modal-content p
+{
+    font-size: 24px;
+
+    text-align: left;
+
+    color: f7cf78;
+}
+.modal-content span
+{
+    font-size: 26px;
+    line-height: 2.5em;
+
+    display: block;
+
+    padding: 10px 0 10px 0;
+
+    text-align: center;
+
+    color: #f7cf78;
+}
+.close
+{
+    position: absolute;
+    top: 30;
+    right: -10px;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+
+    background: url(./images/close.png);
+}
+#kk
+{
+    position: absolute;
+    top: 975px;
+    left: 0;
+
+    width: 100%;
+    height: 360px;
+
+    text-align: center;
+}
+
+#kk div
+{
+    display: inline-block;
+
+    width: 200px;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+}
+
+#kk .selected
+{
+    background-position-x: -200px;
+}
+.choujiang
+{
+    position: absolute;
+    top: 1659px;
+}
+.choujiang div
+{
+    display: inline-block;
+    overflow: hidden;
+
+    width: 168px;
+    height: 168px;
+    margin: 3px 1px;
+}
+.choujiang div img
+{
+    width: 100px;
+    margin-top: 20px;
+}
+.choujiang div span
+{
+    font-size: 20px;
+
+    display: block;
+
+    padding-top: 10px;
+
+    color: #b44603;
+}
+.game
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 428px;
+
+    text-align: center;
+
+    background-size: 100% auto;
+}
+.game-gifts
+{
+    margin-top: 128px;
+    margin-left: 23px;
+}
+ul.game-gifts li
+{
+    float: left;
+
+    width: 154px;
+    height: 170px;
+    margin-right: 26px;
+    padding: 20px 0 10px 0;
+}
+ul.game-gifts li img
+{
+    vertical-align: middle;
+}
+ul.game-gifts li span,
+.item-content span
+{
+    font-size: 22px;
+
+    display: block;
+
+    padding: 10px 20px;
+
+    color: #f7cf78;
+}
+.game-1
+{
+    background-image: url(./images/bg_09.jpg);
+}
+.game-2
+{
+    background-image: url(./images/bg_10.jpg);
+}
+.game-3
+{
+    background-image: url(./images/bg_11.jpg);
+}
+.fuli-content
+{
+    position: relative;
+
+    overflow: hidden;
+}
+.fuli-container
+{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+
+    width: 570px;
+
+    transform: translateX(-50%);
+}
+.fuli
+{
+    padding: 20px;
+    padding-bottom: 0;
+}
+.fuli .desc
+{
+    font-size: 22px;
+
+    padding: 15px;
+
+    color: white;
+    border-radius: 10px;
+    background-color: #2b2625;
+}
+.light
+{
+    color: #ff0;
+}
+.fuli-title
+{
+    font-weight: bold;
+
+    color: #fccc65;
+}
+.fuli-title  img
+{
+    vertical-align: middle;
+}
+.dhxz-title
+{
+    font-size: 26px;
+
+    text-align: center;
+
+    color: #afafaf;
+}
+.dhxz
+{
+    font-size: 26px;
+
+    color: #afafaf;
+}
+.tequan
+{
+    overflow: hidden;
+
+    background-size: 100% auto;
+}
+.tequan-1
+{
+    height: 352px;
+    padding-top: 130px;
+    padding-right: 110px;
+    padding-left: 50px;
+
+    background-image: url(./images/bg_15.jpg);
+}
+.tequan-1 p
+{
+    font-size: 30px;
+
+    margin: 0;
+
+    color: #fccc65;
+}
+.tequan-2
+{
+    height: 481px;
+    padding: 0 30px;
+
+    background-image: url(./images/bg_16.jpg);
+}
+
+.tq-item
+{
+    float: left;
+
+    width: 50%;
+    margin-top: 90px;
+    padding: 10px;
+}
+.tq-item h1
+{
+    font-size: 34px;
+
+    text-align: center;
+
+    color: #fccc65;
+}
+.item-content
+{
+    height: 152px;
+
+    text-align: center;
+
+    border: 1px solid #5e5543;
+}
+.item-content img
+{
+    margin-top: 20px;
+}
+
+.xyk-c
+{
+    position: relative;
+}
+.xyk
+{
+
+
+    width: 100%;
+    padding: 170px 30px 100px 30px;
+    background-size: 100% auto;
+background-repeat: no-repeat;
+    background-image: url(./images/bg_17.jpg), url(./images/bg_18.jpg);;
+}
+.card
+{
+    font-size: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+
+    color: #ccc;
+}
+.card img
+{
+    float: left;
+
+    margin-right: 30px;
+}
+.card .title span
+{
+    font-weight: bold;
+
+    display: inline-block;
+
+    padding: 5px 30px;
+
+    color: black;
+    border-radius: 10px;
+    background-color: #fccc65;
+}
+.card ul li
+{
+    line-height: 1.8em;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>人力资源初级实训</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="../style/sanitize.css">
+    <link rel="stylesheet" type="text/css" href="../style/common.css">
+    <link rel="stylesheet" type="text/css" href="../style/index.css">
+    <link rel="stylesheet" type="text/css" href="../style/register.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <img class="logo" src="../images/logo.png" alt="">
+            <div class="login">
+                <a href="#">登录</a> /
+                <a href="#">注册</a>
+            </div>
+            <ul class="nav">
+                <a href="" class="active">
+                    <li>课程服务</li>
+                </a>
+                <a href="">
+                    <li>数据服务</li>
+                </a>
+                <a href="">
+                    <li>创新教学</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>初次见面，敢问兄台师出何处、功力几何</h1>
+        <div class="content">
+            <div class="row">
+                <div class="label">您的身份：</div>
+                <div class="choice">
+                    <div class="input-radio">
+                        <input type="radio" name="type" data-type=".student">
+                        <span class="lbl">学生</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="type" data-type=".teacher">
+                        <span class="lbl">老师</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="type" data-type="">
+                        <span class="lbl">课程创作</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row student">
+                <div class="label">学习方式：</div>
+                <div class="choice">
+                    <div class="input-radio">
+                        <input type="radio" name="method" value="">
+                        <span class="lbl">跟班学</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="method" value="">
+                        <span class="lbl">自主学习</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row student">
+                <div class="label">难度等级：</div>
+                <div class="choice">
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">初出茅庐</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">渐入佳境</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">过关斩将</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">华山论剑</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row student">
+                <div class="label">学习侧重：</div>
+                <div class="choice">
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">U8</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">ICT</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">人力资源</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">沙盘</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row teacher">
+                <div class="label">教学课程</div>
+                <div class="choice">
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">U8</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">ICT</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">人力资源</span>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="level" value="">
+                        <span class="lbl">沙盘</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-finish" type="button">确定</button>
+        </div>
+    </div> 
+    <div class="overlayer"></div>
+    <div class="modal modal" id="teacher-modal">
+        <div class="modal-header">
+            <span><i class="icon icon-close"></i></span>
+        </div>
+        <div class="modal-body teacher-body">
+            <div class="cp-text">
+                <p>相见是缘，小智备上薄礼，请您笑纳！</p>
+            </div>
+            <div class="cp-course">
+                <img src="../images/t1.jpg" alt="">
+                <p>课程大数据分析</p>
+            </div>
+            <div class="cp-course">
+                <img src="../images/t2.jpg" alt="">
+                <p>课堂360度监控</p>
+            </div>
+            <div class="cp-course">
+                <img src="../images/t3.jpg" alt="">
+                <p>成果全方位展示</p>
+            </div>
+            <div class="start">开启我的智趣教学</div>
+            <p class="color-1">已成就资料管理专业技能！</p>
+        </div>
+    </div>
+    <div class="modal modal" id="student-modal">
+        <div class="modal-header">
+            <span><i class="icon icon-close"></i></span>
+        </div>
+        <div class="modal-body stud-body">
+            <div class="cp-text">
+                <p>相见是缘，小智备上薄礼，请您笑纳！</p>
+            </div>
+            <div class="cp-course">
+                <img src="../images/s.jpg" alt="">
+                <p>人力资源初级实训第一部分第一部分第一部分</p>
+                <div class="start">免费开始</div>
+            </div>
+            <div class="cp-course">
+                <img src="../images/s.jpg" alt="">
+                <p>人力资源初级实训第一部分第一部分第一部分</p>
+                <div class="start">免费开始</div>
+            </div>
+            <p class="color-1">已成就资料管理专业技能！</p>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+
+        $('.list-content').eq(0).show();
+        $('.tabs li').click(function () {
+            var index = $(this).index();
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            $('.list-content').hide();
+            $('.list-content').eq(index).show();
+        });
+        $('.input-radio').click(function () {
+            $(this).find('input').prop('checked', !$(this).find('input').prop('checked'));
+            var type = $('[name=type]:checked').data('type');
+            $('.student, .teacher').hide();
+            $(type).show();
+        })
+        showModal('#teacher-modal');
+    </script>
+</body>
+
+</html>

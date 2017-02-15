@@ -1,0 +1,247 @@
+body {
+    background-color: #f4f6f8;
+}
+.banner {
+    height: 210px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    color: white;
+}
+.banner-content {
+        width: 1140px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.banner-content h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 50px;
+        margin-bottom: 0;
+}
+.banner-content p {
+    text-align: left;
+    width: 360px;
+}
+.banner-content .actions {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+.actions {
+    overflow: hidden;
+}
+.actions .item {
+    width: 190px;
+    float: left;
+    border-right: 1px solid white;
+}
+.actions .item-last {
+    border-right: none;
+}
+.main {
+    width: 1140px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    min-height: 500px;
+    background-color: transparent;
+}
+.left-container {
+    width: 850px;
+    float: left;
+    padding: 20px;
+    box-shadow: 0 0 6px rgba(0,0,0,.10), 0 6px 6px rgba(0,0,0,.10);
+    background-color: white;
+}
+
+.right-container {
+    width: 270px;
+    float: right;
+    margin-right: 10px;
+}
+.side {
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0,0,0,.1), 0 6px 6px rgba(0,0,0,.10);
+    margin-bottom: 25px;
+}
+
+.tabs {
+    
+    border-bottom: 1px solid #E4E4E4;
+}
+.tabs li{
+    
+    padding: 15px 15px;
+}
+.tabs li.active,
+.tabs li:hover {
+     background: none;
+    border-radius: 0;
+    border-bottom: 2px solid #99D74A;
+    color: #99D74A;
+}
+
+
+
+.concept {
+}
+
+.concept h1 {
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.concept h1 span {
+    float: right;
+    font-family: sans-serif;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.concept ul li.have-child>.title {
+    font-size: 16px;
+    color: #333333;
+    border-left: 5px solid #99D74A;
+    font-weight: bold;
+    text-indent: 1.5em;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.concept ul li>.title {
+    font-size: 14px;
+    padding: 9px 0;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.concept ul li>.title span {
+    float: right;
+    margin-left: 20px;
+    color: #FF8604;
+}
+
+.concept ul li.have-child>.title:after {
+    content: "▼";
+    float: right;
+    color: gray;
+}
+
+.concept ul li.have-child>.title.unfold:after {
+    content: "▶";
+    float: right;
+    color: gray;
+}
+
+.concept ul li {
+    text-indent: 2em;
+}
+
+.concept ul li .title:hover {
+    background: #F9F9F9;
+}
+
+.content-container {
+    display: none;
+}
+
+.content-container .content {
+    padding: 20px;
+}
+
+.content-container .content hr {
+    border-top: 1px solid #E4E4E4;
+    width: 940px;
+    margin: 20px -20px;
+}
+.concept ul li>.title span {
+    float: right;
+    margin-left: 20px;
+    color: #aaa;
+}
+.concept ul li>.title span > .btn {
+    display: none;
+    color: #FF8604;
+    border: 1px solid #FF8604;
+    font-family: inherit;
+        padding: 4px 10px;
+    border-radius: 5px;
+}
+.concept ul li>.title span > .btn:hover {
+    background-color: #FF8604;
+    border: none;
+    color: white;
+}
+.concept ul li:hover > .title span > .btn {
+    display: inline-block;
+}
+
+.side-header {
+    border-bottom: 1px solid #E4E4E4;
+    height: 60px;
+
+    padding: 0 15px;
+}
+.side-single {
+    line-height: 60px;
+
+}
+.side-header h1 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.side-header span {
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+}
+.side-header .icon {
+    float: left;
+}
+.side-content {
+}
+.nengli {
+    padding: 0 10px 0 30px;
+}
+.nengli li {
+    margin: 10px 0;
+}
+.kecheng li {
+    padding: 15px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.yqm-modal {
+    display: inline;
+    font-size: 14px;
+    color: #999999;
+}
+
+.yqm-modal input {
+    height: 40px;
+    text-align: center;
+    width: 120px;
+    padding-right: 10px;
+}
+.cp-text {
+    margin: 20px;
+}
+
+.cp-text p {
+    text-align: center;
+    margin: 0;
+}
+
+.add-cp-course {
+    text-align: center;
+}
+
+.add-cp-bottom a {
+    color: #99D74A;
+}
