@@ -8,9 +8,11 @@ ul {
     padding: 0px;
     margin: 0px;
 }
+
 .color-1 {
     color: #999999;
 }
+
 .icon {
     width: 20px;
     height: 20px;
@@ -20,7 +22,8 @@ ul {
     background-size: cover;
 }
 
-.input-container input, .input-container select {
+.input-container input,
+.input-container select {
     border-radius: 0!important;
     color: #858585;
     background-color: #FFF;
@@ -33,6 +36,7 @@ ul {
     -webkit-transition-duration: .1s;
     transition-duration: .1s;
 }
+
 .icon-search {
     background-image: url(../images/icons/14.png);
 }
@@ -96,17 +100,18 @@ ul {
     width: 27px;
     background-image: url(../images/icons/profile.png);
 }
+
 li:hover .icon-profile {
-    
     background-image: url(../images/icons/profile_0.png);
 }
+
 .icon-logout {
     width: 23px;
     background-image: url(../images/icons/logout.png);
 }
+
 li:hover .icon-logout {
     background-image: url(../images/icons/logout_0.png);
-
 }
 
 .icon-rw {
@@ -136,14 +141,15 @@ li:hover .icon-logout {
 .icon-change {
     background-image: url(../images/icons/r.png);
 }
+
 span:hover .icon-delete {
     background-image: url(../images/icons/d_0.png);
-
 }
+
 span:hover .icon-change {
     background-image: url(../images/icons/r_0.png);
-
 }
+
 .icon-phone {
     width: 13px;
     background-image: url(../images/icons/phone.png);
@@ -153,43 +159,51 @@ span:hover .icon-change {
     width: 17px;
     background-image: url(../images/icons/lock.png);
 }
+
 li:hover .icon-lock {
     background-image: url(../images/icons/lock_0.png);
 }
+
 .icon-head {
     width: 37px;
     height: 28px;
     background-image: url(../images/icons/c1.png);
     background-size: cover;
 }
+
 .icon-book2 {
     width: 25px;
     height: 28px;
     background-image: url(../images/icons/c2.png);
     background-size: cover;
 }
+
 .icon-global {
     width: 28px;
     height: 28px;
     background-image: url(../images/icons/c3.png);
     background-size: cover;
 }
+
 .icon-badge {
     width: 30px;
     height: 42px;
     background-image: url(../images/icons/c0.png);
     background-size: cover;
 }
+
 .btn {
     border-radius: 2px;
     cursor: pointer;
 }
+
 .btn-normal {
     border: 1px solid #E4E4E4;
     padding: 9px 18px;
     color: #999999;
     font-family: inherit;
 }
+
 .btn:hover {
     color: #99D74A;
     border: 1px solid #99D74A;
@@ -212,6 +226,7 @@ li:hover .icon-lock {
 .btn-sm {
     padding: 5px 18px;
 }
+
 .overlayer {
     background: rgba(0, 0, 0, 0.50);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
@@ -252,6 +267,7 @@ li:hover .icon-lock {
     padding: 30px;
     /*padding-bottom: 0;*/
 }
+
 .course {
     height: 260px;
     width: 260px;
@@ -262,16 +278,16 @@ li:hover .icon-lock {
     margin-right: 20px;
     overflow: hidden;
 }
+
 .course-border {
     width: 238px;
     height: 238px;
-    
     border: 1px solid #E4E4E4;
     position: absolute;
     top: 10px;
     left: 10px;
-
 }
+
 .do-lean {
     position: absolute;
     top: 10px;
@@ -284,6 +300,7 @@ li:hover .icon-lock {
     padding: 2px 16px;
     color: white;
 }
+
 .do-code {
     letter-spacing: 5px;
 }
@@ -302,7 +319,8 @@ li:hover .icon-lock {
     text-align: left;
     margin-bottom: 0;
 }
-.course h2{
+
+.course h2 {
     font-weight: normal;
     margin: 0;
     font-size: 13px;
@@ -359,22 +377,23 @@ li:hover .icon-lock {
     outline: none;
 }
 
-.add-cp-course .course{
-        margin: auto;
-        display: block
+.add-cp-course .course {
+    margin: auto;
+    display: block
 }
+
 .cp-text {
-        text-align: center;
+    text-align: center;
     color: #696969;
 }
-.cp-text span{
+
+.cp-text span {
     letter-spacing: 10px;
 }
 
 .popover {
     display: none;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
-    
     background: white;
     top: 100%;
     left: 0;
@@ -385,19 +404,63 @@ li:hover .icon-lock {
 .popover-tragger {
     position: relative;
 }
+
 .popover-tragger:hover .popover {
     display: block;
 }
+
 .popover ul {
     margin: 0;
-    
     line-height: 40px;
     color: #999999;
     width: 150px;
     text-align: center;
 }
+
 .popover ul li {
     padding: 5px 0px;
     border-bottom: 1px solid #E4E4E4;
+}
 
+.input-error {
+    border: 1px solid #f01816;
+}
+
+.clear {
+    background-image: url(../images/clear.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+
+.input-error .clear {
+    display: block;
+}
+
+.error-lint {
+    margin: -10px 20px 10px 20px;
+    color: #f01816;
+}
+
+.a-404 {
+    width: 852px;
+    margin: auto;
+    position: relative;
+    margin-top: 150px;
+}
+
+.a-404 img {
+    width: 100%;
+}
+.a-404 a{
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 260px;
+    right: 220px;
 }

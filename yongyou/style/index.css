@@ -199,6 +199,7 @@ a:hover {
 .modal-sm .input-attach {
     margin: 20px;
     color: #999999;
+    position: relative;
 }
 
 .modal-sm a {

@@ -51,3 +51,9 @@ $('.tabs li').click(function () {
         .eq(index)
         .show();
 })
+
+$('.clear').click(function(){
+    $(this).parent().find('input').val('');
+    $(this).parent().removeClass('input-error');
+    $(this).parent().next().remove();
+})
