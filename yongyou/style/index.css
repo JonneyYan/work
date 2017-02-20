@@ -250,3 +250,6 @@ a:hover {
     padding: 10px 66px;
     cursor: pointer;
 }
+#login p {
+    margin: 1em;
+}

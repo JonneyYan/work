@@ -54,6 +54,8 @@
     float: left;
     width: 100px;
     line-height: 35px;
+    padding-right: 20px;
+    text-align: right;
 }
 
 .teacher {
@@ -76,7 +78,7 @@
 .create-class input,
 .create-class select {
     padding: 10px;
-    width: 410px;
+    width: 500px;
 }
 
 .row-text {
@@ -191,4 +193,8 @@ font-size: 16px;
 .teacher-body .cp-course {
     width: 150px;
     padding: 10px 0;
+}
+.btn-confirm {
+    margin-left: 450px;
+    padding: 9px 18px;
 }

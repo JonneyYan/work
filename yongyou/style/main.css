@@ -511,3 +511,16 @@ textarea {
     color: #FFFFFF;
     width: 266px;
 }
+.badge {
+    font-size: 12px;
+    padding: 2px 9px;
+    margin: 0 7px;
+}
+.badge-student {
+    color: #FF6800;
+    background: rgba(255,104,0,0.40);
+}
+.badge-teacher {
+    color: #4D99D2;
+    background: rgba(77,153,210,0.40);
+}

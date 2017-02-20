@@ -57,3 +57,7 @@ $('.clear').click(function(){
     $(this).parent().removeClass('input-error');
     $(this).parent().next().remove();
 })
+
+    $('.input-radio').click(function () {
+        $(this).find('input').prop('checked', !$(this).find('input').prop('checked'));
+    })
