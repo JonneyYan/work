@@ -1,0 +1,111 @@
+.stage {
+    text-align: center;
+}
+span.stage-diver {
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background: #CCCCCC;
+    position: relative;
+    top: -4px;
+}
+span.stage-item {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #FF8604;
+    display: inline-block;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+span.stage-item.stage-disabled {
+    background: #CCCCCC;
+}
+.user-info {
+    width: 470px;
+    margin: auto;
+    position: relative;
+}
+.create-class input, .create-class select {
+    padding: 10px;
+    width: 330px;
+}
+span.input-label {
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    line-height: 35px;
+    text-align: left;
+}
+.label {
+    width: 139px;
+}
+.btn-confirm {
+    margin-left: 139px;
+    padding: 9px 18px;
+}
+.input-code input{
+    width: 170px;
+}
+#get-code {
+    border: 1px solid #D5D5D5;
+    padding: 9px 18px;
+    color: #999999;
+    font-family: inherit;
+    border-radius: 0;
+    width: 109px;
+    text-align: center;
+}
+#get-code:hover {
+    color: #99D74A;
+    border: 1px solid #99D74A;
+    font-family: inherit;
+}
+.user-info-finish {
+    text-align: center;
+}
+.user-info-finish .btn-confirm {
+    margin: 0;
+}
+.user-info-finish h2 {
+    font-size: 16px;
+    color: #333333;
+    background-image: url(../images/mark.png);
+    line-height: 30px;
+    background-size: auto 100%;
+    background-position-x: 70px;
+}
+h3.timer {
+    font-size: 14px;
+    color: #999999;
+    margin: 25px 0;
+}
+.passwd-popover {
+    width: 270px;
+    background: #F9F9F9;
+    border: 1px solid #CCCCCC;
+    padding: 10px 20px;
+    position: absolute;
+    top: 63px;
+    left: 490px;
+    display: none;
+}
+.passwd-popover:after {
+     content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 20px;
+    left: -8px;
+    border-left: 1px solid #CCCCCC;
+    transform: rotate(45deg);
+    border-bottom: 1px solid #CCCCCC;
+    position: absolute;
+    background: #F9F9F9;
+}
+.passwd-popover ul {
+    padding-left: 11px;
+    margin: 0px;
+    list-style: circle;
+}
